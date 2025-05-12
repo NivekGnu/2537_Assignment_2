@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<div class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-200 via-blue-300 to-blue-400 px-4 space-y-6 text-center">
+  
+  <div class="backdrop-blur-md bg-white/30 border border-white/40 shadow-xl rounded-3xl p-10 w-full max-w-md">
+    <h1 class="text-5xl font-bold text-slate-600 drop-shadow mb-6">
+      Welcome!
+    </h1>
+
+    <form action="/signup" method="get" class="mb-4">
+      <button class="w-full bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition">
+        Sign Up
+      </button>
+    </form>
+
+    <form action="/login" method="get">
+      <button class="w-full bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition">
+        Log In
+      </button>
+    </form>
+  </div>
+
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<div class="bg-gray-100 h-screen flex flex-col items-center justify-center space-y-4 text-center">
+
+    <h1 class="text-6xl ">
+        Welcome <%= name %>!
+    </h1>
+
+    <form action="/members" method="get">
+      <button class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-600 transition duration-200">
+        Go to members area
+      </button>
+    </form>
+
+    <form action="/logout" method="get">
+      <button class="bg-green-600 text-white px-6 py-2 rounded-lg shadow hover:bg-green-600 transition duration-200">
+        Sign Out
+      </button>
+    </form>
+
+</div>
+
+<%- include('partials/footer') %>
