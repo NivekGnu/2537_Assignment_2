@@ -1,0 +1,17 @@
+<div class="flex items-center justify-between">
+    <li class="text-3xl font-bold text-black drop-shadow text-center">
+        <%= user.name %> (<%= user.userType %>)
+    </li>
+
+    <form action="/changeRole" method="POST" class="flex space-x-2">
+        <input type="hidden" name="email" value="<%= user.email %>">
+        <button type="submit" name="newRole" value="admin"
+            class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+            Promote to Admin
+        </button>
+        <button type="submit" name="newRole" value="member"
+            class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+            Demote to Member
+        </button>
+    </form>
+</div>

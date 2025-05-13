@@ -198,7 +198,7 @@ app.get('/admin', async (req,res) => {
 
     if(req.session.user.userType !== 'admin') {
         res.status(403);
-        res.render("noaccess", {title: 'NO ACCESS', navLinks: navLinks,});
+        res.render("noaccess", {title: 'NO ACCESS', navLinks: navLinks});
         return;
     }
 
