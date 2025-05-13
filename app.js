@@ -49,7 +49,8 @@ const navLinks = [
     {name: 'Home', url: '/'},
     {name: 'Members', url: '/members'},
     {name: 'Admin', url: '/admin'},
-    {name: '404', url: '/404'}
+    {name: '404', url: '/404'},
+    {name: 'Log Out', url: '/logout'}
 ];
 
 app.get('/', (req,res) => {
